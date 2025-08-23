@@ -1,0 +1,17 @@
+$breakpoints: (
+  sm: 480px,
+  md: 640px,
+  lg: 960px,
+  xl: 1200px,
+);
+
+$base-font-family: 'Lato-Regular';
+$head-font-family: 'Lato-Bold';
+
+$color-primary: #3e9cdc;
+$color-white: #ffffff;
+$color-dark: #272733;
+$color-error: #d94c4c;
+
+$body-color: $color-white;
+$body-background-color: $color-dark;
