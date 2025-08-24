@@ -1,7 +1,9 @@
 <script setup>
 import UiLayout from '@/components/UiLayout.vue'
-import TheHeader from '@/components/TheHeader.vue'
 import TheFooter from '@/components/TheFooter.vue'
+import TheHeader from '@/components/TheHeader.vue'
+import SectionMain from '@/components/SectionMain.vue'
+import SectionOrder from '@/components/SectionOrder.vue'
 </script>
 
 <template>
@@ -11,10 +13,8 @@ import TheFooter from '@/components/TheFooter.vue'
     </template>
 
     <template #main>
-      <div>main</div>
-      <h1>фывфыв</h1>
-      <h2>asd</h2>
-      <div>At vero eos et accusamus et iusto odio dignissimos ducimus!</div>
+      <section-main />
+      <section-order />
     </template>
 
     <template #footer>

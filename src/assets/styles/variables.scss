@@ -1,7 +1,6 @@
 $breakpoints: (
   sm: 480px,
-  md: 640px,
-  lg: 960px,
+  md: 768px,
   xl: 1200px,
 );
 
@@ -10,6 +9,7 @@ $head-font-family: 'Lato-Bold';
 
 $color-primary: #3e9cdc;
 $color-white: #ffffff;
+$color-black: #000000;
 $color-dark: #272733;
 $color-error: #d94c4c;
 
