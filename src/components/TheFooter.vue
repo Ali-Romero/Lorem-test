@@ -51,21 +51,23 @@ import IconVk from '@/assets/icons/icon-vk.svg'
 
 <style scoped lang="scss">
 .footer {
+  background-color: #3d4050;
+
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-direction: column-reverse;
     align-items: center;
     flex-wrap: wrap;
     line-height: normal;
     padding: 20px 0;
     font-size: 13px;
     gap: 14px;
-    flex-direction: column-reverse;
     
     @include desktop() {
+      flex-direction: row;
       padding: 30px 0;
       gap: 20px;
-      flex-direction: row;
     }
   }
   

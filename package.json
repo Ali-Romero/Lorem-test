@@ -14,9 +14,13 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@splidejs/vue-splide": "^0.6.12",
     "v-wave": "^3.0.3",
+    "vee-validate": "^4.15.1",
     "vue": "^3.5.18",
-    "vue3-select-component": "^0.11.8"
+    "vue3-select-component": "^0.11.8",
+    "vue3-slider": "^1.10.1",
+    "yup": "^1.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",

@@ -34,6 +34,7 @@ const isShowMobileMenu = ref(false)
 <style scoped lang="scss">
 .header {
   position: fixed;
+  z-index: 22;
   background: rgba(16, 16, 29, 0.9);
   margin: 0 auto;
   left: 0;

@@ -25,7 +25,10 @@ const classes = computed(() => ({
   --vs-background-color: #{rgba($color: $color-white, $alpha: 0.85)};
   --vs-placeholder-color: #{$color-dark};
   --vs-text-color: #{$color-dark};
-  --vs-font-size: 18px;
+  --vs-font-size: 16px;
+  @include desktop() {
+    --vs-font-size: 18px;
+  }
 
   &.open {
     --vs-background-color: rgba(61, 64, 80, 0.85);
@@ -35,17 +38,26 @@ const classes = computed(() => ({
     --vs-menu-border: 1px solid rgba(61, 64, 80, 0.85);
     --vs-menu-offset-top: 0;
     --vs-border-radius: 0 0 3px 3px;
-    --vs-menu-background-color: rgba(39, 39, 51, 0.9);
+    --vs-menu-background-color: rgba(39, 39, 51, 0.92);
     --vs-option-text-color: #{$color-white};
     --vs-option-hover-background-color: rgba(39, 39, 51, 0);
     --vs-option-focused-background-color: rgba(39, 39, 51, 0);
-    --vs-option-focused-text-color: #{$color-primary};
+    --vs-option-focused-text-color: #{$color-white};
+    --vs-option-selected-text-color: #{$color-primary};
+    --vs-option-selected-background-color: rgba(39, 39, 51, 0);
+    --vs-option-hover-text-color: #{$color-white};
+    --vs-indicator-icon-color: #{$color-white};
   }
-
   &--error {
     animation: shake 0.6s;
     --vs-placeholder-color: #{$color-error};
     --vs-text-color: #{$color-error};
+  }
+
+  :deep(.menu-option) {
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   :deep(.control) {

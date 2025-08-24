@@ -63,8 +63,11 @@ import UiButton from '@/components/UiButton.vue'
   }
 
   &__inner {
-    padding: 120px 0 70px 0;
+    padding: 110px 0 50px 0;
 
+    @include mobile() {
+      padding: 120px 0 70px 0;
+    }
     @include tablet() {
       padding: 150px 0 100px 0;
     }

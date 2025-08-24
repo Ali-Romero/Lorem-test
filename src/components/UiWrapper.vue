@@ -7,7 +7,7 @@
 <style scoped lang="scss">
 .ui-wrapper {
   margin: 0 auto;
-  max-width: 1192px;
+  max-width: 1200px;
   padding: 0 8px;
 
   @include tablet() {

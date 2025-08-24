@@ -12,7 +12,7 @@ function onChange(event) {
 
 <template>
   <label class="ui-input-file">
-    <input type="file" class="ui-input-file__input" @change="onChange" />
+    <input v-bind="$attrs" type="file" class="ui-input-file__input" @change="onChange" />
     <ui-button label="Прикрепить файл" tag="span" large class="ui-input-file__button">
       <template #icon>
         <icon-file />
