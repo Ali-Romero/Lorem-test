@@ -39,7 +39,7 @@ const classes = computed(() => ({
     --vs-option-text-color: #{$color-white};
     --vs-option-hover-background-color: rgba(39, 39, 51, 0);
     --vs-option-focused-background-color: rgba(39, 39, 51, 0);
-    --vs-option-focused-text-color: #{$color-primary}
+    --vs-option-focused-text-color: #{$color-primary};
   }
 
   &--error {
