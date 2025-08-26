@@ -43,7 +43,7 @@ function onChange(value) {
       width: 20px;
       height: 20px;
       border: 2px solid #286690;
-      
+
       @include desktop() {
         width: 24px;
         height: 24px;
@@ -79,13 +79,13 @@ function onChange(value) {
   &__label {
     display: flex;
     justify-content: space-between;
-    line-height: normal;
     font-size: 14px;
     padding: 0 0 18px 0;
 
     @include mobile() {
       font-size: 16px;
     }
+
     @include tablet() {
       font-size: 18px;
     }

@@ -32,6 +32,7 @@
     @include tablet() {
       gap: 30px;
     }
+
     @include desktop() {
       gap: 60px;
     }
@@ -42,29 +43,30 @@
     display: inline-block;
     position: relative;
     text-decoration: none;
+    text-transform: uppercase;
     transition: all 0.3s;
-  }
 
-  &__link:hover {
-    color: $color-primary
-  }
+    &:hover {
+      color: $color-primary;
 
-  &__link:after {
-    content: '';
-    width: 0;
-    height: 1px;
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-    background: currentColor;
-    transition: width 0.2s ease-in-out;
-    will-change: width;
-  }
+      &::after {
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+    }
 
-  &__link:hover:after {
-    width: 100%;
-    left: 0;
-    right: auto;
+    &::after {
+      content: '';
+      width: 0;
+      height: 1px;
+      position: absolute;
+      bottom: -2px;
+      right: 0;
+      background: currentColor;
+      transition: width 0.2s ease-in-out;
+      will-change: width;
+    }
   }
 }
 </style>

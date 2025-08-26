@@ -26,6 +26,7 @@ const classes = computed(() => ({
   --vs-placeholder-color: #{$color-dark};
   --vs-text-color: #{$color-dark};
   --vs-font-size: 16px;
+
   @include desktop() {
     --vs-font-size: 18px;
   }

@@ -191,21 +191,20 @@ const options = {
       animation: wave 1.5s infinite ease-in-out;
     }
 
-    span:nth-child(1) { animation-delay: 0s; }
-    span:nth-child(2) { animation-delay: 0.15s; }
-    span:nth-child(3) { animation-delay: 0.3s; }
-    span:nth-child(4) { animation-delay: 0.45s; }
-    span:nth-child(5) { animation-delay: 0.6s; }
-  }
-
-  @keyframes wave {
-    0%, 100% {
-      transform: translateY(0);
-      opacity: 0.5;
+    span:nth-child(2) {
+      animation-delay: 0.15s;
     }
-    50% {
-      transform: translateY(-6px);
-      opacity: 1;
+
+    span:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+
+    span:nth-child(4) {
+      animation-delay: 0.45s;
+    }
+
+    span:nth-child(5) {
+      animation-delay: 0.6s;
     }
   }
 }

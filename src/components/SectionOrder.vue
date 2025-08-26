@@ -1,7 +1,6 @@
 <script setup>
-import { ref } from 'vue';
-import UiWrapper from '@/components/UiWrapper.vue';
-import AppOrderSteps from '@/components/AppOrderSteps.vue';
+import UiWrapper from '@/components/UiWrapper.vue'
+import AppOrderSteps from '@/components/AppOrderSteps.vue'
 import AppOrderForm from '@/components/AppOrderForm.vue'
 </script>
 
@@ -10,10 +9,13 @@ import AppOrderForm from '@/components/AppOrderForm.vue'
     <ui-wrapper>
       <div class="section-order__inner">
         <div class="section-order__info">
-          <h2 class="section-order__title">Оформление 
+          <h2 class="section-order__title">
+            Оформление
             <span>Заказа</span>
           </h2>
-          <div class="section-order__description">Перед заполнением формы ознакомьтесь с нашей схемой работы!</div>
+          <div class="section-order__description">
+            Перед заполнением формы ознакомьтесь с нашей схемой работы!
+          </div>
         </div>
         <div class="section-order__steps">
           <app-order-steps />
@@ -29,7 +31,7 @@ import AppOrderForm from '@/components/AppOrderForm.vue'
 <style scoped lang="scss">
 .section-order {
   color: $color-white;
-  background-image: url('@/assets/images/order-bg.jpg');
+  background-image: url('@/assets/images/order-bg.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -40,13 +42,15 @@ import AppOrderForm from '@/components/AppOrderForm.vue'
 
   &__inner {
     padding: 50px 0;
-    
+
     @include mobile() {
       padding: 60px 0 70px 0;
     }
+
     @include tablet() {
       padding: 90px 0 109px 0;
     }
+
     @include desktop() {
       padding: 121px 0 149px 0;
     }
@@ -59,15 +63,24 @@ import AppOrderForm from '@/components/AppOrderForm.vue'
     @include tablet() {
       margin: 0 0 54px 0;
     }
+
     @include desktop() {
       margin: 0 0 80px 0;
     }
   }
 
   &__title {
-    line-height: normal;
-    font-size: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
     margin: 0 0 20px 0;
+
+    @include mobile() {
+      font-size: 24px;
+    }
+
+    @include tablet() {
+      font-size: 30px;
+    }
 
     @include desktop() {
       font-size: 36px;
@@ -89,6 +102,7 @@ import AppOrderForm from '@/components/AppOrderForm.vue'
     @include tablet() {
       margin: 0 0 60px 0;
     }
+
     @include desktop() {
       margin: 0 0 80px 0;
     }
@@ -96,6 +110,7 @@ import AppOrderForm from '@/components/AppOrderForm.vue'
 
   &__feedback {
     margin: 0;
+    overflow: hidden;
   }
 }
 </style>

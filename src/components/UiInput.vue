@@ -37,7 +37,7 @@ const classes = computed(() => ({
   font-size: 16px;
   transition: all 0.3s;
   outline: none;
-  
+
   @include desktop() {
     font-size: 18px;
   }

@@ -9,7 +9,7 @@ const props = defineProps({
 })
 
 const classes = computed(() => ({
-  'is-show': props.isShow,
+  'app-mobile-menu--show': props.isShow,
 }))
 </script>
 
@@ -19,7 +19,7 @@ const classes = computed(() => ({
       <a href="/" class="app-mobile-menu__logo">
         <img :src="logoUrl" alt="logo" width="130" height="36" />
       </a>
-      <button class="app-mobile-menu__close" @click="$emit('close')">
+      <button class="app-mobile-menu__close" @click="$emit('close')" aria-label="close">
         <close-icon />
       </button>
     </div>
@@ -42,7 +42,7 @@ const classes = computed(() => ({
   opacity: 0;
   transition: all 0.2s;
 
-  &.is-show {
+  &--show {
     opacity: 1;
     visibility: visible;
   }
@@ -74,10 +74,10 @@ const classes = computed(() => ({
     display: flex;
     align-items: center;
     justify-content: center;
-  }
 
-  &__close svg {
-    stroke: white;
+    svg {
+      stroke: white;
+    }
   }
 }
 </style>

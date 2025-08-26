@@ -20,11 +20,8 @@ const isShowMobileMenu = ref(false)
           <app-menu />
         </div>
         <div class="header__burger">
-          <app-menu-mobile
-            :is-show="isShowMobileMenu"
-            @close="isShowMobileMenu = false"
-          ></app-menu-mobile>
-          <ui-burger @click="isShowMobileMenu = !isShowMobileMenu"></ui-burger>
+          <app-menu-mobile :is-show="isShowMobileMenu" @close="isShowMobileMenu = false" />
+          <ui-burger @click="isShowMobileMenu = !isShowMobileMenu" />
         </div>
       </div>
     </ui-wrapper>
@@ -50,12 +47,13 @@ const isShowMobileMenu = ref(false)
     @include tablet() {
       padding: 24px 0;
     }
+
     @include desktop() {
       padding: 32px 0;
     }
   }
 
-  &__logo img{
+  &__logo img {
     display: block;
     width: 170px;
     height: 15px;
@@ -64,6 +62,7 @@ const isShowMobileMenu = ref(false)
       width: 200px;
       height: 17px;
     }
+
     @include desktop() {
       width: 245px;
       height: 21px;

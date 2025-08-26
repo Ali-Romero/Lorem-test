@@ -102,6 +102,8 @@ const options = [
 
 <style scoped lang="scss">
 .app-order-form {
+  $parent: &;
+
   &__row {
     display: flex;
     flex-wrap: wrap;
@@ -109,13 +111,15 @@ const options = [
     flex-direction: column;
     gap: 16px;
     margin: 0 0 20px 0;
-    
+
     @include mobile() {
       gap: 20px;
     }
+
     @include tablet() {
       flex-direction: row;
     }
+
     @include desktop() {
       gap: 30px;
       margin: 0 0 30px 0;
@@ -123,18 +127,23 @@ const options = [
 
     &:nth-child(2) {
       margin: 0;
-      .app-order-form__col {
+
+      #{$parent}__col {
         flex: unset;
         width: 100%;
+
         @include tablet() {
           width: 360px;
         }
+
         @include desktop() {
           width: 370px;
         }
+
         &:nth-child(1) {
           width: 100%;
           margin: 0 0 6px 0;
+
           @include desktop() {
             margin: 0;
             width: 770px;
@@ -142,7 +151,7 @@ const options = [
         }
       }
     }
-    }
+  }
 
   &__col {
     flex: calc(33.3% - 30px) 1 1;

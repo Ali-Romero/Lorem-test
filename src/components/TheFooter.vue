@@ -37,7 +37,7 @@ import IconVk from '@/assets/icons/icon-vk.svg'
               </a>
             </li>
             <li class="footer__item">
-              <a href="http://" target="_blank" rel="noopener noreferrer" class="footer__link">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="footer__link">
                 <icon-vk />
                 <span class="footer__description">Мы вконтакте</span>
               </a>
@@ -59,18 +59,17 @@ import IconVk from '@/assets/icons/icon-vk.svg'
     flex-direction: column-reverse;
     align-items: center;
     flex-wrap: wrap;
-    line-height: normal;
     padding: 20px 0;
     font-size: 13px;
     gap: 14px;
-    
+
     @include desktop() {
       flex-direction: row;
       padding: 30px 0;
       gap: 20px;
     }
   }
-  
+
   &__list {
     display: flex;
     list-style-type: none;
@@ -81,6 +80,7 @@ import IconVk from '@/assets/icons/icon-vk.svg'
     @include tablet() {
       gap: 24px;
     }
+
     @include desktop() {
       gap: 38px;
     }
@@ -90,7 +90,8 @@ import IconVk from '@/assets/icons/icon-vk.svg'
     }
   }
 
-  &__item, &__link {
+  &__item,
+  &__link {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -105,22 +106,23 @@ import IconVk from '@/assets/icons/icon-vk.svg'
     text-decoration: none;
     color: inherit;
     transition: all 0.3s;
-  }
 
-  &__link:hover {
-    color: $color-primary
+    &:hover {
+      color: $color-primary;
+    }
   }
 
   &__payments {
-    color: #C3C3C3;
+    color: #c3c3c3;
 
     @include desktop() {
-      border-inline: 1px solid #C3C3C3;
+      border-inline: 1px solid #c3c3c3;
       padding: 0 40px;
     }
 
     li span {
       width: 60px;
+
       @include mobile() {
         width: unset;
       }

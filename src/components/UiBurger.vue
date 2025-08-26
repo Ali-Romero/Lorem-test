@@ -4,7 +4,7 @@ import MenuBurger from '@/assets/icons/menu-burger.svg'
 
 <template>
   <button class="ui-burger" aria-label="menu">
-    <menu-burger/>
+    <menu-burger />
   </button>
 </template>
 

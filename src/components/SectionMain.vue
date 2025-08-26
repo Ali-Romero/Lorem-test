@@ -10,13 +10,15 @@ import UiButton from '@/components/UiButton.vue'
         <div class="section-main__inner">
           <h1 class="section-main__title">
             <span>Lorem ipsum </span>
-            dolor sit amet 
-            <br>
-            consectetur 
+            dolor sit amet
+            <br />
+            consectetur
             <span>adipiscing</span>
           </h1>
           <div class="section-main__info">
-            <h2 class="section-main__subtitle">At vero eos et accusamus et iusto odio dignissimos ducimus!</h2>
+            <h2 class="section-main__subtitle">
+              At vero eos et accusamus et iusto odio dignissimos ducimus!
+            </h2>
             <ul class="section-main__list">
               <li>Totam rem aperiam eaque ipsa</li>
               <li>Sit voluptatem accusantium doloremque laudantium</li>
@@ -25,10 +27,10 @@ import UiButton from '@/components/UiButton.vue'
           </div>
           <div class="section-main__buttons">
             <div class="section-main__button">
-              <ui-button primary label="Заказать"/>
+              <ui-button primary label="Заказать" />
             </div>
             <div class="section-main__button">
-              <ui-button label="Подробнее"/>
+              <ui-button label="Подробнее" />
             </div>
           </div>
         </div>
@@ -40,7 +42,7 @@ import UiButton from '@/components/UiButton.vue'
 <style scoped lang="scss">
 .section-main {
   color: $color-black;
-  background-image: url('@/assets/images/main-bg.jpg');
+  background-image: url('@/assets/images/main-bg.webp');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -49,13 +51,13 @@ import UiButton from '@/components/UiButton.vue'
   @include tablet() {
     text-align: left;
   }
+
   @include desktop() {
     background-size: 1920px auto;
-
   }
 
   &__outer {
-    background-color: rgba(255, 255, 255, 0.496);
+    background-color: rgba($color: $color-white, $alpha: 0.496);
 
     @include tablet() {
       background-color: unset;
@@ -68,9 +70,11 @@ import UiButton from '@/components/UiButton.vue'
     @include mobile() {
       padding: 120px 0 70px 0;
     }
+
     @include tablet() {
       padding: 150px 0 100px 0;
     }
+
     @include desktop() {
       padding: 202px 0;
     }
@@ -78,7 +82,6 @@ import UiButton from '@/components/UiButton.vue'
 
   &__title {
     text-transform: uppercase;
-    line-height: normal;
     font-size: 19px;
     margin: 0 0 30px 0;
 
@@ -86,22 +89,23 @@ import UiButton from '@/components/UiButton.vue'
       font-size: 23px;
       margin: 0 0 40px 0;
     }
+
     @include tablet() {
       font-size: 32px;
       margin: 0 0 60px 0;
     }
+
     @include desktop() {
       font-size: 48px;
       margin: 0 0 80px 0;
     }
   }
 
-  &__title span{
+  &__title span {
     color: $color-primary;
   }
 
   &__info {
-    line-height: normal;
     font-size: 16px;
     margin: 0 0 40px 0;
 
@@ -109,6 +113,7 @@ import UiButton from '@/components/UiButton.vue'
       font-size: 18px;
       margin: 0 0 60px 0;
     }
+
     @include desktop() {
       margin: 0 0 80px 0;
       font-size: 20px;
@@ -131,19 +136,19 @@ import UiButton from '@/components/UiButton.vue'
     margin: 0;
     padding: 0 0 0 8px;
     gap: 3px;
-  
+
     @include desktop() {
       padding: 0 0 0 10px;
       gap: 5px;
     }
   }
-  
+
   &__list li::before {
-    content: "—";
+    content: '-';
     color: #000;
-    margin: 0 11px 0 0
+    margin: 0 11px 0 0;
   }
-  
+
   &__buttons {
     display: flex;
     gap: 10px;
