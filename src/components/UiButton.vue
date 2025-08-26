@@ -41,6 +41,11 @@ const classes = computed(() => ({
   text-transform: uppercase;
   color: #2a2b30;
   cursor: pointer;
+  transition: all 0.3s;
+  
+  &:hover {
+    opacity: 0.8;
+  }
 
   &--primary {
     background-color: $color-primary;
