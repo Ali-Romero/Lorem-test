@@ -120,7 +120,7 @@ import IconVk from '@/assets/icons/icon-vk.svg'
       padding: 0 40px;
     }
 
-    li span {
+    .footer__description {
       width: 60px;
 
       @include mobile() {
